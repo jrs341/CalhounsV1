@@ -1,0 +1,26 @@
+{
+  "name": "calhounsv1",
+  "version": "1.0.0",
+  "description": "Updating Calhoun's website",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrs341/CalhounsV1.git"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "GraphQL",
+    "Relay",
+    "MongoDB"
+  ],
+  "author": "Jason Sinn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrs341/CalhounsV1/issues"
+  },
+  "homepage": "https://github.com/jrs341/CalhounsV1#readme"
+}
