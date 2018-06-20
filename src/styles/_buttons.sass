@@ -1,0 +1,178 @@
+.sm
+  border: none
+  font-size: 14px
+  font-weight: 500
+  font-family: 'IBM Plex Sans', sans-serif
+  min-height: 35px
+  height: 30px
+  min-width: 30px
+  padding: 0 15px
+  border-radius: 2px
+  white-space: nowrap
+  background-color: $lightblue
+  &:hover
+    background-color: $lightbluehover
+
+.ura-button
+  border: none
+  font-size: 16px
+  font-weight: 400
+  font-family: 'IBM Plex Sans', sans-serif
+  min-height: 36px
+  height: 36px
+  min-width: 70px
+  padding: 0 10px 2px
+  border-radius: 3px
+  white-space: nowrap
+
+  &:hover
+    cursor: pointer
+
+  &:focus
+    outline: none
+
+  &__display-none
+    display: none
+
+  &__disable
+    background-color: $grey
+    cursor: not-allowed
+    border-radius: 3px
+    color: $white
+    min-height: 35px
+    min-width: 115px
+    padding: 0 10px
+
+  &__edit
+    margin-top: 20px
+    background-color: $blue
+    border-radius: 3px
+    color: $white
+    max-height: 26px
+    min-width: 115px
+    padding: 0 10px
+
+  &__list
+    background: none
+    padding: 0
+
+  &__primary
+    background-color: $blue
+    color: $white
+    &:focus
+      outline: none
+    &:hover
+      background-color: $bluehover
+
+  &__grey
+    background-color: $darkgrey
+    color: $white
+    &:focus
+      outline: none
+    &:hover
+      background-color: $darkgreyhover
+
+  &__orange
+    background-color: $orange
+    color: $white
+    &:focus
+      outline: none
+    &:hover
+      background-color: $orangehover
+
+  &__green
+    background-color: $green
+    color: $white
+    &:focus
+      outline: none
+    &:hover
+      background-color: $greenhover
+
+  &__nuclear
+    background-color: $nucleargreen
+    color: $trueblack
+    &:focus
+      outline: none
+    &:hover
+      background-color: $nucleargreenhover
+
+  &__red
+    background-color: $red
+    color: $white
+    &:focus
+      outline: none
+    &:hover
+      background-color: $redhover
+
+  &__secondary
+    background: none
+    color: $blue
+
+  &__cancel
+    background: none
+    color: $red
+    &:hover
+      color: $redhover
+
+  &__success
+    background-color: $green
+    color: $white
+    &:hover
+      background-color: $greenhover
+
+  &__pagination
+    background-color: $olive
+    border-radius: 3px
+    color: $pagination-button
+    font-size: 14px
+    margin: 0 3px
+    min-width: 35px
+
+    &--justify-right
+      display: flex
+      justify-content: flex-end
+      margin-left: auto
+      margin: 10px -6px 0 0
+
+    &:hover
+      background-color: $olivehover
+
+    &--active
+      background-color: $white
+      border: 2px solid $pagination-border
+      color: $black
+      font-weight: normal
+      padding: 1px
+
+  &__quick-filter
+    background-color: $white
+    color: blue
+    margin-right: 20px
+
+  &__icon
+    color: $icon-button
+    cursor: pointer
+    font-size: 22px
+    padding: 0 5px
+
+    &--active,
+    &:hover
+      color: $blue
+.ura-button .fa-plus-circle
+  color: $white !important
+  margin-right: 3px
+  &:hover
+    color: $white !important
+
+.ura-icon-button
+  cursor: pointer
+  font-size: 24px
+  margin: 0 5px
+  display: flex
+  align-items: center
+
+.ura-iconset
+  display: flex
+  justify-content: flex-end
+  i
+    padding-left: 5px

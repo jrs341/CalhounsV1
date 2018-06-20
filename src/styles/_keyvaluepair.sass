@@ -1,0 +1,54 @@
+/** Newer, more awesome KVP **/
+.ura-kvp
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+
+  & > div
+    display: flex
+    flex-direction: row
+    font-size: 15px
+    padding: 3px 0
+
+    &> label
+      display: flex
+      flex: 1
+      color: rgba(74, 74, 74, 0.6)
+      line-height: 19px
+      margin-top: 2px
+
+      & + *
+        display: flex
+        flex: 2
+        margin-left: 5px
+
+  &--edit
+    outline: none
+    background-color: $lightbeige
+    padding: 5px
+    &:focus
+      border: solid 1px
+      border-color: $blue
+      background-color: $white
+      padding: 3px 5px
+
+  .ura-table__column
+    border-top: 0px
+    border-bottom: 0px
+    display: flex
+    flex-grow: 1
+    justify-content: flex-end
+
+    .ura-iconset
+      position: absolute
+      top: 12px
+      right: 12px
+
+  .ura-text
+    .ura-table__column
+      justify-content: flex-start
+
+  .bottomalign
+    display: flex
+    justify-content: space-between
+    flex-direction: columm

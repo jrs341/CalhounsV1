@@ -1,0 +1,232 @@
+@import 'elements/audio'
+@import 'elements/thumb'
+@import 'elements/pageheaders'
+@import 'elements/popout'
+
+select
+  font-family: 'IBM Plex Sans', sans-serif
+  &:focus
+    outline: none
+
+.ura-divider
+  border: none
+  background-color: $beige
+  height: 1px
+  margin: 25px auto
+  width: 100%
+
+.ura-box
+  border: 1px solid $beige
+  height: 100%
+  margin: 10px 5px 40px 0px
+  width: 100%
+
+.ura-beige-box
+  background-color: $mediumgreyhover
+  border: 1px solid $beige
+  height: 100%
+  margin: 10px 5px 40px 0px
+  width: 100%
+
+.ura-icon-table
+  float: right
+
+.ura-vertical-rule
+  background-color: $input-bg
+  width: 2px
+
+.ura-quick-filter
+  background-color: $olive
+  border-radius: 3px
+  display: block
+  font-weight: 300
+  font-size: 14px
+  padding: 6px 12px
+
+.ura-role
+  background-color: $olive
+  display: inline-flex
+  font-size: 12px
+  line-height: 14px
+  margin-right: 4px
+  padding: 6px
+
+.ura-section
+  display: flex
+  flex: 1
+  flex-direction: row
+  background-color: $lightbeige
+
+  &__left
+    background-color: $white
+    border: solid 1px #E4E4CE
+    padding: 15px 25px
+    margin: 25px 0 25px 25px
+    overflow: auto
+    display: flex
+    flex: 1
+    ul
+      margin-left: 25px !important
+
+  &__right
+    background-color: $white
+    border: solid 1px #E4E4CE
+    padding: 15px 25px
+    margin: 25px
+    overflow: auto
+    display: flex
+    flex: 1
+
+  &__fullwidth
+    background-color: $white
+    border: solid 1px #E4E4CE
+    padding: 15px 25px
+    margin: 25px
+    overflow: auto
+    flex: 1
+
+.dropzone
+  border-width: 2px
+  border-color: rgb (102, 102, 102)
+  border-style: dashed
+  border-radius: 5px
+  padding: 100px 0
+  display: flex
+  flex: 1
+  align-items: center
+  justify-content: center
+
+.ura-section__right .ura-table__column
+  padding: 5px 10px
+
+.ura-section__right .ura-table__column input
+    padding: 0px 5px
+    margin: 0
+
+.ura-section__right label
+  font-size: 20px
+
+.ura-section__right .ura-data-table
+    margin: 15px 0
+
+.ura-login
+  &__email
+    padding: 1px 15px
+
+  &__password
+      padding: 1px 15px
+
+  &-form
+    &>div
+      display: flex
+
+.admin-workflow
+  ul
+    margin: 0
+    padding: 0
+
+.userback-button-container .userback-button-se
+  left: 70px !important
+  right: inherit !important
+
+.userback-button-container .userback-button
+  height: 20px !important
+  line-height: 20px !important
+  padding: 0 10px !important
+
+.sheet
+  margin-bottom: 15px
+  z-index: 12
+
+.properties
+  display: flex
+  flex-direction: row
+  margin: 6px
+  label
+    flex: 1
+    display: flex
+    align-items: center
+    color: $grey
+    white-space: nowrap
+    margin-right: 5px
+  span
+    flex: 2
+
+pre
+  margin: 0
+
+input
+  padding: 9px
+  border: 0
+  border-radius: 3px
+  background-color: $input-bg
+  font-size: 14px
+  color: #989692
+  &:focus
+    outline: none
+
+select
+  padding: 8px
+  border: 0
+  border-radius: 3px
+  background-color: $input-bg
+  font-size: 14px
+  color: #989692
+  height: 35px
+  width: 100%
+  &:focus
+    outline: none
+
+.userback-button-container .userback-controls-se
+  right: auto !important
+  left: 20px !important
+.userback-button-container .userback-controls-se[wstyle="text"]
+  bottom: 40px !important
+.userback-button-container .userback-controls-se:before, .userback-button-container .userback-controls-se:after
+  left: 100px !important
+  right: inherit !important
+
+.admin-workflow
+  height: 100%
+  &>.ura-row
+    height: 100%
+    &>.ura-column
+      &>.ura-row
+        flex-grow: 0
+        height: 100%
+        &>.ura-column
+          &>.ura-row
+            flex-grow: 0
+          &>:nth-child(3)
+            flex-grow: 1
+
+.handsontable
+  tr
+    &:first-child
+      td
+        color: white
+        background-color: $green
+
+.user-list
+  .ura-card
+    margin-bottom: 30px
+    padding-bottom: 0px
+
+.user-list
+  .ura-data-table
+    .ura-table--horizontal
+      &>:last-child
+        .ura-card
+          margin-bottom: 3px
+
+.role-list
+  .ura-card
+    margin-bottom: 30px
+    padding-bottom: 0px
+
+.role-list
+  .ura-data-table
+    .ura-table--horizontal
+      &>:last-child
+        .ura-card
+          margin-bottom: 3px

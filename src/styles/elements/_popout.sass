@@ -1,0 +1,49 @@
+.ura-popout
+  display: inline-flex
+  color: $white
+  font-size: 14px
+  font-weight: 500
+  font-family: 'IBM Plex Sans', sans-serif
+  &__list
+    padding: 8px
+    background-color: $blue
+    border-radius: 3px
+    &__item
+      color: $white
+      &:hover
+        background-color: $bluehover
+
+.ura-quick-filter__menu,
+.ura-popout__icon
+  cursor: pointer
+  font-size: 16px
+  margin-left: 10px
+
+.ura-popout__menu
+  background-color: $white
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, .15)
+  font-size: 14px
+  position: absolute
+  margin-left: 20px
+  margin-top: -10px
+  min-width: 100px
+
+.ura-popout__items
+  margin: 0
+  padding: 0
+
+.ura-popout__item
+  border-bottom: 1px solid $olive
+  cursor: pointer
+  display: flex
+  list-style: none
+  padding: 8px
+
+  &:last-child
+    border-bottom: none
+
+  &:hover
+    background-color: $olive
+
+.ura-popout__menu--hidden
+  display: none

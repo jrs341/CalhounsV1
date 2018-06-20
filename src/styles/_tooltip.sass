@@ -1,0 +1,98 @@
+.ura-tooltip
+  position: relative
+  display: inline-block
+  // border-bottom: 1px dotted black
+
+  &:hover .ura-tooltiptext--hover
+    visibility: visible
+
+.ura-tooltip .ura-tooltiptext--hover
+  visibility: hidden
+  width: 300px
+  background-color: $grey
+  color: #fff
+  // text-align: center
+  bottom: 150%
+  left: -21%
+  margin-left: 0px
+  position: absolute
+  z-index: 1
+
+  &::after
+    content: " "
+    position: absolute
+    top: 100%
+    left: 150px
+    margin-left: -5px
+    border-width: 5px
+    border-style: solid
+    border-color: $grey transparent transparent transparent
+
+.ura-tooltip .ura-tooltiptext--hidden
+  visibility: hidden
+  width: 300px
+  background-color: $grey
+  color: #fff
+  text-align: center
+  bottom: 150%
+  left: -21%
+  margin-left: 0px
+  position: absolute
+  z-index: 1
+
+  &::after
+    content: " "
+    position: absolute
+    top: 100%
+    left: 150px
+    margin-left: -5px
+    border-width: 5px
+    border-style: solid
+    border-color: $grey transparent transparent transparent
+
+.ura-tooltiptext--visible
+  visibility: visible
+  width: 400px
+  background-color: $black
+  color: #fff
+  text-align: left
+  padding: 10px
+  border-radius: 8px
+  bottom: 150%
+  left: -200px
+  margin-bottom: 3px
+  position: absolute
+  z-index: 1
+
+  &::after
+    content: " "
+    position: absolute
+    top: 100%
+    left: 205px
+    margin-left: -5px
+    border-width: 10px
+    border-style: solid
+    border-color: $black transparent transparent transparent
+// ************ Left tootip arrow ******************
+// .ura-tooltip .ura-tooltiptext
+//   visibility: hidden
+//   top: -15px
+//   left: 120%
+//   width: 350px
+//   background-color: $grey
+//   color: #fff
+//   text-align: center
+//   padding: 5px 0
+//   border-radius: 8px
+//   position: absolute
+//   z-index: 1
+
+//   &::after
+//     content: " "
+//     position: absolute
+//     top: 20px
+//     right: 100%
+//     margin-top: -5px
+//     border-width: 10px
+//     border-style: solid
+//     border-color: transparent $grey transparent transparent

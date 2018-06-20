@@ -1,0 +1,65 @@
+.ura-navigation
+  display: inline-flex
+  padding: 32px 0 0 0
+
+  &__item
+    color: $heading
+    display: flex
+    text-align: center
+    font-size: 18px
+    font-weight: 100
+    margin: 0 15px
+    padding: 0 1px
+    text-decoration: none
+    letter-spacing: 0.1px
+
+    &:hover
+      color: black
+
+    &:first-child
+      margin-left: 16px
+      margin-right: 15px
+
+    &--active
+      border-bottom: solid 1px $blue
+      color: $blue
+      font-weight: 500
+      padding-bottom: 2px
+
+      &:hover
+        color: $bluehover
+
+  &__input,
+  &__select
+    background-color: $input-bg
+    border-radius: 2px
+    min-height: 35px
+    min-width: 260px
+
+    &__icon
+      color: $brown
+      max-height: 15px
+
+.ura-breadcrumbs
+  border-bottom: 1px solid rgba(74, 74, 74, .07)
+  display: inline-flex
+  flex-grow: 1
+  font-size: 14px
+  list-style: none
+  padding: 0 0 10px 0
+  margin: 0
+
+  &__item
+    padding-left: 10px
+
+    &:first-child
+      padding-left: 0
+
+    &:after
+      content: '\f105'
+      font-family: FontAwesome
+      padding-left: 10px
+
+    &--last
+      &:after
+        content: none

@@ -1,0 +1,177 @@
+.ura-card
+  border: 1px solid #EAEADC
+  border-radius: 3px
+  box-sizing: border-box
+  display: flex
+  flex-grow: 1
+  font-size: 14px
+  font-weight: 100
+  height: 100%
+  line-height: 24px
+  padding: 20px 25px
+  position: relative
+  margin-right: 25px
+
+
+  &--edit
+    outline: 1px solid $blue
+
+  &> .ura-assemble__container
+    border: initial
+    padding: initial
+
+  &--inactive
+    background-color: $white
+
+  &--hover
+    background-color: $lightbeige
+    border: 1px solid $blue
+
+  &--warning
+    &::after
+      color: rgba(96, 96, 96, .1)
+      content: '\f071'
+      font-family: 'FontAwesome'
+      font-size: 120px
+      padding: 0 35px
+      position: absolute
+      right: 0
+      top: 35%
+      transform: translateY(-25%)
+
+  &--danger
+    background-color: $red
+    color: $white
+
+    .ura-table__heading
+      color: $white
+
+
+    .ura-text__anchor
+      color: $white
+
+    &::after
+      color: rgba(255, 255, 255, .2)
+      content: '\f071'
+      font-family: 'FontAwesome'
+      font-size: 120px
+      padding: 0 35px
+      position: absolute
+      right: 0
+      top: 35%
+      transform: translateY(-25%)
+
+
+    .ura-card__actions
+      &::after
+        color: $white
+
+  &__actions
+    &::after
+      color: rgba(96, 96, 96, .2)
+      content: '\f142'
+      cursor: pointer
+      font-family: 'FontAwesome'
+      font-size: 18px
+      padding: 0 15px
+      position: absolute
+      right: 0
+
+
+    &__dropdown
+      background-color: $white
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2)
+      color: $black
+      cursor: pointer
+      display: none
+      flex-direction: column
+      margin-top: 18px
+      padding: 4px 12px
+      position: absolute
+      right: 0
+
+      &--visible
+        display: flex
+
+  &__delete
+    align-items: center
+    background-color: $olive
+    display: flex
+    height: 100%
+    justify-content: center
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+
+    &--icon
+      &::after
+        color: rgba(96, 96, 96, .2)
+        content: '\f00d'
+        cursor: pointer
+        font-family: 'FontAwesome'
+        font-size: 18px
+        padding: 0 15px
+        position: absolute
+        right: 0
+
+  &__overlay
+    background-color: rgba(0, 0, 0, .3)
+    bottom: 0
+    display: block
+    font-size: 14px
+    font-weight: 100
+    left: 0
+    padding: 6px 0
+    position: absolute
+    text-align: center
+    width: 100%
+
+    &> strong
+      font-weight: 600
+
+.ura-note-card
+  border: 1px solid #EAEADC
+  border-bottom: none
+  color: #666
+  font-size: 15px
+  font-weight: 100
+  line-height: 24px
+  padding: 20px 25px
+  margin-right: 25px
+
+  &> .ura-assemble__container
+    border: initial
+    padding: initial
+
+  .ura-row
+    padding-bottom: 0
+
+.ura-column
+  &:last-child
+    .ura-note-card
+      &:last-child
+        border-bottom: 1px solid #eaeaea
+        margin-bottom: 1px
+        display: flex
+        flex: 1
+
+.ura-block-content
+  include evens()
+  &>:nth-child(even)
+    .ura-column
+      .ura-note-card
+        border-top: 0
+        border-bottom: 0
+        background-color: $card-stripe
+
+.ura-column
+  &:first-child
+    &> .ura-card
+      margin-left: 0
+    &> .ura-assemble__container
+      &> .ura-block
+        margin-left: 0
+        &> .ura-block-content
+          &> .ura-card
+            margin-left: 0

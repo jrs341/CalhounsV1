@@ -1,0 +1,436 @@
+.callUI
+
+    &__row
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+
+    &__hide
+      visibility: hidden
+
+    &__vert
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 8px
+
+    &__align-right
+      text-align: right
+      vertical-align: middle
+      margin: auto
+
+    &__leftmargin
+      margin-left: 8px
+
+    &__eightpx
+        margin: 8px
+
+    &__align-left
+      text-align: left
+
+    &__align-center
+      text-align: center
+
+    &__top
+      margin-top: 10px
+
+    &__float-right
+      float: right
+
+    &__float-left
+      float: left
+
+    &__field
+        background-color: white
+        border-radius: 2px
+        font-size: 14px
+        font-weight: 100
+        line-height: 20px
+        position: relative
+        height: 26px
+        min-width: 60px
+        width: inherit
+        border: 0
+        padding: 5px
+        outline: none
+        margin: 5px
+
+    &__agent
+        background-color: $lightbeige
+        border-radius: 3px
+        font-size: 14px
+        min-width: 60px
+        width: inherit
+        border: 0
+        padding: 10px
+        outline: none
+        margin-left: 5px
+
+    &__time
+        font-size: 18px
+
+    &__header
+      background-color: rgba(0, 0, 0, 0.7)
+
+    &__modal
+        align-items: center
+        background-color: rgba(0, 0, 0, 0.85)
+        bottom: 0
+        display: none
+        left: 0
+        position: fixed
+        right: 0
+        top: 0
+        z-index: 4
+
+    &__card_gray
+        background-color: white
+        position: absolute
+        border: 1px solid #f6f6f1
+        border-radius: 5px
+        /*padding: 10px*/
+        font-size: 12px
+        font-weight: 100
+        line-height: 24px
+        /*width: 280px*/
+        /*height: 180px*/
+        word-wrap: break-word
+        z-index: 99999
+        top: 50%
+        left: 45%
+        color: #000
+        text-align: center
+        padding: 20px
+
+    &__task-card
+        border: none
+        border-top: 1px solid #eaeaea
+        border-bottom: 1px solid #eaeaea
+        color: #666
+        font-size: 12px
+        font-weight: 100
+        line-height: 24px
+        padding: 14px 8px
+        text-align: left
+        float: center
+        color: white
+
+    &__cardID
+        background-color: rgba(0,0,0,0.75)
+        box-sizing: border-box
+        font-size: 14px
+        font-weight: 100
+        line-height: 24px
+        color: white
+        padding-bottom: 10px
+
+    &__cardID a
+      color: #8BC6FF
+      &:hover
+        color: #AAD5FF
+
+    &__cardID label
+        color: #C8C7C7
+        margin-right: 5px
+
+    &__cardID h2
+        color: #ffffff
+        margin: 0 0 5px 0
+        font-weight: 300
+        font-size: 20px
+
+    &__cardID h3
+        color: #ffffff
+        margin: 10px 5px 5px 5px
+        font-weight: 300
+        font-size: 24px
+
+    &__card_text
+        text-align: left
+
+    &__label
+        display: flex
+        flex: 1
+        color: rgba(74, 74, 74, 0.6)
+        margin-left: 5px
+
+    &__label-value
+        color: #167ee2
+        cursor: pointer
+        text-decoration: none
+
+    &__text-bold
+        font-weight: bold
+
+    &__overlay
+        z-index: 500px
+        position: absolute
+
+    &__overlay-background
+        position: absolute
+        height: 10000px
+        background-color: #000
+        width: 95%
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+        opacity: 0.3
+        padding-top: 200px
+
+    &__alignRight
+        right: 5px
+
+    &__text_white
+        color: #ffffff
+
+    &__text_blue
+        color: #8BC6FF
+
+    &__table_blue
+        color: $blue
+        cursor: pointer
+
+    &__text_red
+        color: #DB2828
+
+    &__text_green
+        color: #21ba45 !important
+
+    &__text_black
+        color: black
+
+    &__tag-text
+        color: black
+        margin-right: 0.1cm
+
+    &__h1
+        padding: 10px
+        font-size: 18px
+
+    &__black
+        background-color: black
+
+    &__blue
+        background-color: #167EE2
+        &:hover
+          background-color: #319AFF
+
+    &__gray1
+        background-color: #ecece7
+
+    &__gray-close
+        background-color: rgba(255,255,255,0.2)
+
+    &__gray3
+        background-color: #9B9B9B
+
+    &__red
+        background-color: #DB2828
+        &:hover
+          background-color: #F21414
+          cursor: pointer
+        &:focus
+          outline-color: transparent
+          outline-style: none
+
+    &__grey
+        background-color: $darkgrey
+        &:hover
+          background-color: $darkgreyhover
+          cursor: pointer
+        &:focus
+          outline-color: transparent
+          outline-style: none
+
+    &__yellow
+        background-color: #FFD700
+
+    &__orange
+        background-color: #F5A623
+
+    &__green
+        background-color: #21ba45
+        &:hover
+          background-color: #1ADA47
+          cursor: pointer
+        &:focus
+          outline-color: transparent
+          outline-style: none
+
+    &__grey-btn
+        margin-right: 4px
+        cursor: pointer
+
+    &__padding
+        padding: 5px
+
+    &__bottom_padding
+        padding-bottom: 10px
+
+    &__bottom_margin
+      margin: 15px
+
+    &__noverticalmargin
+      margin: 0 15px
+
+    &__mediumverticalmargin
+      margin: 0 10px
+
+    &__smallverticalmargin
+      margin: 0 5px
+
+      h2
+        margin-left: 5px
+
+    &__notes
+      margin: 0
+
+    &__notes textarea
+      resize: none
+      overflow: auto
+      width: 96%
+      border: none
+      font-size: 14px
+      padding: 5px
+      line-height: 21px
+      &:focus
+        outline-color: transparent
+        outline-style: none
+
+    &__left_padding
+        padding-left: 5px
+
+    &__left_padding_lg
+        padding-left: 20px
+
+    &__top_padding
+        padding-top: 10px
+
+    &__padding_none
+        padding: 0px
+
+    &__font
+       right: 5px
+       font-size: 17px
+       font-weight: 100
+       text-decoration: none
+
+    &__textarea
+
+    &__button
+        color: white
+        text-align: center
+        font-size: 16px
+        height: 35px
+        border-radius: 3px
+        border-style: none
+        margin:  5px
+        cursor: pointer
+        white-space: nowrap
+
+    &__grey-btn-width
+      width: 40px
+
+    &__button__primary
+        background-color: #0080ff
+        border-radius: 3px
+        color: white
+        min-width: 115px
+        padding: 10px
+        margin-right: 10px
+        text-align: center
+        font-weight: 400
+        cursor: pointer
+
+    &__save_button
+        background-color: #167EE2
+        border-radius: 3px
+        color: white
+        width: 100px
+        padding: 10px 10px
+        margin-right: 12px
+        font-weight: 400
+        font-size: 16px
+        cursor: pointer
+        float: right
+
+    &__call_button
+        color: #21ba45 !important
+        &:hover
+          color: #21ba45 !important
+
+    &__call_button_rotate
+        transform: rotate(-50deg)
+
+    &__dropCall_button
+        color: #db2828 !important
+        &:hover
+          color: #db2828 !important
+
+    &__dropCall_rotate
+        transform: rotate(135deg)
+
+    &__callOperator_button
+        color: white
+        text-align: center
+        font-weight: 12px
+        padding: 10px
+        border-radius: 50%
+        letter-spacing: 2px
+        width: 10px
+        height: 10px
+        margin: 8px
+
+    &__navigation__item
+        color: #blue
+        text-align: center
+        font-size: 17px
+        font-weight: 100
+        text-decoration: none
+        margin-bottom: 2cm
+.fa-stack
+  width: inherit
+
+.fa-stack-1x
+   color: white !important
+   cursor: pointer
+   &:hover
+     color: white !important
+
+.CallAnswer
+  font-size: 14px
+
+.CallAnswer h2
+  font-size: 20px
+  font-weight: normal
+  margin: 0 0 5px 0
+  padding-bottom: 5px
+  border-bottom: 1px solid $beige
+
+.CallAnswer h4
+    font-size: 18px
+    font-weight: 500
+    margin: 0
+    color: #939372
+
+.CallAnswer .ura-modal-input__label
+  color: rgba(74, 74, 74, 0.6)
+  font-weight: normal
+  font-size: 14px
+
+.CallAnswer .ura-modal__box .ura-row label
+  white-space: nowrap
+
+.CallAnswer .ura-modal__box
+  padding: 15px
+
+.fa-address-book
+  padding-top: 4px
+
+.CallTable
+  h2
+    margin-top: 10px
+    margin-bottom: 10px
+  .ura-table__row
+    &:first-child
+      display: none

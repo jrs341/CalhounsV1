@@ -1,0 +1,160 @@
+@import 'inputs/checkbox'
+@import 'searchable'
+@import 'inputs/label'
+
+.ura-modal-input
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04)
+  display: flex
+  flex-direction: row
+  margin: 0
+  padding: 10px 0
+  text-indent: 10px
+
+  &__select
+    background-color: $white
+    color: $grey
+    outline: 0
+    font-size: 14px
+    font-weight: 400
+    font-family: 'IBM Plex Sans', sans-serif
+    display: flex
+    flex: 2
+    border: solid 1px $white
+    margin-left: 10px
+
+  &__input
+    background-color: $white
+    border: 0
+    border-radius: 4px
+    color: #4a4a4a
+    display: flex
+    flex: 2
+    font-size: 14px
+    outline: 0
+    padding: 0 10px
+
+  &__label
+    color: #6a6a69
+    display: flex
+    flex: 1
+    font-size: 14px
+    white-space: nowrap
+    margin-right: 5px
+
+    &::after
+      content: ':'
+
+.ura-column
+  &:first-child
+    &> .ura-modal-input
+      margin: 0
+
+.ura-input__container
+  align-items: center
+  background-color: $input-bg
+  border: 1px solid transparent
+  display: flex
+
+  &--focused
+    background-color: $white
+    border: 1px solid #f6f6f1
+
+.ura-input__typing
+  display: none
+  font-size: 20px
+  padding: 8px
+  position: relative
+
+  &--visible
+    display: flex
+    flex-direction: row-reverse
+
+.ura-input__container--full-width
+  width: 100%
+
+.ura-input__container--no-min-width
+  align-items: center
+  background-color: $input-bg
+  display: inline-flex
+  min-width: 10px
+  padding-right: 14px
+
+.ura-input__container--table
+  align-items: center
+  background-color: $input-bg
+  display: inline-flex
+  padding-right: 14px
+
+.ura-input__container--has-label
+  margin-left: 8px
+
+.ura-input__container--th
+  min-width: 0
+  padding-right: 0
+
+.ura-input
+  background-color: transparent
+  border: none
+  border-radius: 2px
+  flex-grow: 1
+  font-size: 14px
+  min-height: 35px
+  padding: 0 10px
+
+  &__label
+    font-size: 16px
+    padding-left: 10px
+
+  &:focus
+    outline: 0
+
+.ura-input--th
+  width: 100%
+
+.ura-input--inline
+  display: inline-flex
+
+.ura-input--justify-right
+  margin-left: auto
+
+.ura-input__icon
+  color: $brown
+  font-size: 18px
+  line-height: 35px
+  padding: 0 8px
+
+.ura-input__advanced
+  background-color: $white
+  color: $brown
+  cursor: pointer
+  font-size: 18px
+  line-height: 30px
+  margin-right: 4px
+  padding: 0 6px
+
+.ura-search
+  display: inline-flex
+  flex-grow: 1
+  margin-top: 24px
+
+  & > div
+    width: 100%
+
+.ura-form__login
+  align-items: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+
+.ura-input--full-width
+  width: 100%
+
+.ura-inline-edit
+  all: inherit
+
+.ura-input--table
+  font-style: italic
+  outline: 0
+  padding: 6px
+  width: 100%

@@ -1,0 +1,62 @@
+.ura-select
+  background-color: #f9f9f7
+  color: #4a4a4a
+  display: flex
+  line-height: 35px
+  min-height: 35px
+  padding: 0 8px
+  position: relative
+
+  &--editable
+    cursor: text
+
+  &:focus
+    outline: 0
+
+  &::after
+    color: #cecdbd
+    content: '\f0dd'
+    cursor: pointer
+    font-family: 'FontAwesome'
+    font-size: 10px
+    padding: 0 10px
+    position: absolute
+    right: 5px
+    top: -3px
+
+  &__input
+    color: #4a4a4a
+    display: flex
+    font-size: 14px
+    font-weight: 100
+    width: 100%
+
+    &:focus
+      outline: 0
+
+  &__dropdown
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .1)
+    display: none
+    flex-direction: column
+    left: 0
+    position: absolute
+    top: 35px
+    width: 100%
+    z-index: 1
+
+    &--visible
+      display: flex
+
+  &__option
+    background-color: #f9f9f7
+    color: #4a4a4a
+    cursor: pointer
+    display: flex
+    font-size: 14px
+    font-weight: 100
+    line-height: 24px
+    padding: 4px 8px
+    word-break: break-all
+
+    &:hover
+      background-color: #e8e8e8

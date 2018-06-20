@@ -1,0 +1,96 @@
+a
+  font-weight: 300
+  margin: 0
+  padding: 0
+  text-decoration: none !important
+  font-size: 14px
+  &:visited
+    color: $blue !important
+    text-decoration: none !important
+  &:hover
+    color: $bluehover
+    text-decoration: none !important
+
+.ura-text
+  font-family: 'IBM Plex Sans', sans-serif
+  font-size: 14px
+  font-weight: 300
+  line-height: 20px
+  letter-spacing: 0.1px
+
+  &--bold
+    font-weight: bold
+
+  &--inactive
+    color: $inactive-text
+
+  &--green
+    color: $green
+
+  &--orange
+    color: $orange
+
+  &--default
+    color: $black !important
+    &:visited
+      color: $black !important
+
+  &__label
+    color: $grey
+
+    &--bold
+      font-weight: bold
+
+    &--dropdown
+      line-height: 35px
+      margin-right: 10px
+
+    &--dropdown-after
+      line-height: 35px
+      margin-left: 10px
+
+    &--inactive
+      color: $inactive-label
+
+  &__large
+    font-size: 32px
+
+  &--valid
+    color: $green
+
+a,
+.ura-text__anchor
+  color: $blue
+  cursor: pointer
+  text-decoration: none
+
+.ura-text-center
+  text-align: center
+
+.ura-text-right
+  text-align: right
+
+.capitalize
+  text-transform: capitalize
+
+.fa-ellipsis-v
+  padding-left: 25px
+  cursor: pointer
+  &:focus
+    outline: none
+
+.textarea
+  &__critical
+    background-color: $lightbeige
+    font-size: 14px
+    border: 0
+    padding: 10px
+    resize: vertical
+    display: flex
+    flex: 1
+    margin-bottom: 10px
+    &:focus
+      outline: none
+      background-color: $white
+      border: solid 1px
+      border-color: $blue

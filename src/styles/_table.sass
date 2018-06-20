@@ -1,0 +1,187 @@
+.ura-data-table
+  margin: 0
+  display: flex
+  flex: 1
+
+.ura-table
+  background-color: $white
+  border-right: 1px solid #efefef
+  border-left: 1px solid #efefef
+  border-spacing: 0 1px
+  display: table
+  width: 100%
+
+  &__toggle
+    display: inline-flex
+    padding:  3px 0 0 7px
+    vertical-align: top
+
+  &__column ul
+      margin: 0
+
+  &__column
+    display: table-cell
+    font-size: 14px
+    padding: 0
+    vertical-align: top
+    color: $grey
+    padding: 12px 15px
+    border-bottom: solid 1px
+    border-top: solid 1px
+    border-color: $navigation-selector
+    &:nth-child(an+b)
+    &--heading
+      color: $table-header
+      font-size: 14px
+      input
+        display: flex
+        flex: 1
+        margin-top: 10px
+        margin-right: -20px
+      &:last-child
+        input
+          margin-right: -5px
+
+    &--flex
+      display: flex
+      justify-content: space-between
+
+  &__row
+    border: 1px solid grey
+    display: table-row
+
+    &:hover
+      .ura-text
+        color: $black
+
+    &:nth-child(even)
+      background-color: $table-alternate
+      border: 1px solid #edede6
+
+    &--edit,
+    &--selected
+      outline: 1px solid $blue
+
+  &--horizontal
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    margin-right: -25px
+
+    .ura-text
+      .ura-table__column
+        color: $black
+        padding: 0
+        border: 0
+
+    .ura-card
+      flex-direction: row
+
+    .ura-table__row
+      background-color: transparent
+      border: none
+      box-shadow: none
+
+      .ura-table__column
+        all: inherit
+        width: initial
+
+      .ura-table__column--heading
+        color: #000
+        font-weight: 400
+
+    .ura-th
+      &__sort
+        color: #6b6a68
+        cursor: pointer
+        user-select: none
+
+        &:after
+          content: '\f0dc'
+          font-family: 'FontAwesome'
+          font-size: 10px
+          margin-left: 8px
+          position: relative
+
+        &--active
+          color: $blue
+
+        &--asc
+          &:after
+            content: '\f0de'
+            top: 1px
+
+        &--desc
+          &:after
+            content: '\f0dd'
+            top: -2px
+
+    &__icon
+      color: $heading
+      display: inline-flex
+      font-family: 'IBM Plex Sans', sans-serif
+      font-size: 20px
+      font-weight: 300
+      line-height: 26px
+
+.ura-table input, .ura-table select
+      padding: 8px
+      border: 0
+      border-radius: 3px
+      background-color: $input-bg
+      font-size: 14px
+      color: #989692
+      &:focus
+        outline: none
+
+.ura-table select
+  height: 33px
+  width: 100%
+
+
+.ura-toggle
+  color: #eae9e4
+  cursor: pointer
+
+  &__vertical
+    .ura-line
+      border-bottom: 1px solid #eae9e4
+      border-radius: 90px
+      border-top: 1px solid #eae9e4
+      display: block
+      height: 0
+      margin-top: 6px
+      width: 20px
+
+      &:first-child
+        margin-top: 2px
+
+  &__horizontal
+    display: flex
+    flex-direction: column
+    padding-right: 6px
+    padding-top: 2px
+
+    &> span
+      display: flex
+
+      &:last-child
+        padding-top: 6px
+
+    .ura-block
+      background-color: #eae9e4
+      border-radius: 2px
+      display: inline-block
+      height: 6px
+      width: 6px
+
+      &:first-child,
+      &:nth-child(4)
+        margin-right: 6px
+
+  &--active
+    .ura-line
+      border-color: $blue
+
+    .ura-block
+      background-color: $blue

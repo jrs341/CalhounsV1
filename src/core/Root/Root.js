@@ -13,8 +13,8 @@ class Root extends Component {
     // store: PropTypes.object.isRequired,
   }
   render () {
-    // const { env } = this.props
-    // const RootComponent = (env === 'production') ? RootProd : RootDev
+    const { env } = this.props
+    const RootComponent = (env === 'production') ? RootProd : RootDev
     return (
       <RootComponent {...this.props} />
     )

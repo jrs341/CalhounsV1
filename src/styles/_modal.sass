@@ -1,0 +1,90 @@
+.ura-modal input
+  background-color: $white
+
+.ura-modal
+  align-items: center
+  justify-content: center
+  background-color: rgba(0, 0, 0, 0.4)
+  bottom: 0
+  display: none
+  left: 0
+  overflow: scroll
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 1001
+  & .ura-modal-input
+    border: 1px solid transparent
+    padding: 8px
+    background-color: $white
+    margin: 5px 0
+    text-indent: 0
+    &__input
+      margin-left: 20px
+
+    &--invalid
+      border: 1px red solid
+
+  &--visible
+    display: flex
+
+  &__box
+    background-color: #f3f1ec
+    border: 1px solid #ececec
+    border-radius: 2px
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .1)
+    display: flex
+    flex-direction: column
+    line-height: 35px
+    margin: 0 auto
+    padding: 20px
+
+    &--form
+      width: 600px
+
+  &__close
+    border-radius: 12px
+    color: $white
+    display: block
+    height: 24px
+    position: absolute
+    right: -12px
+    text-align: center
+    top: -27px
+    cursor: pointer
+    width: 24px
+    font-size: 24px
+
+    &> *
+      position: relative
+      top: -5px
+      left: 10px
+      color: $white !important
+
+  &__actions
+    display: flex
+    flex-direction: row
+    flex-grow: 1
+    justify-content: space-between
+    padding-top: 10px
+
+  h2
+    margin: 0 0 10px 0
+    padding: 0 0 10px 0
+    border-bottom: 1px solid #E8E8DC
+    width: 100%
+
+  h3
+    font-size: 18px
+    font-weight: 400
+    display: inline-flex
+    margin: 0
+    padding: 0 0 0 5px
+
+.ura-modal-input__input.ext
+  width: 100px
+  margin-left: 0px
+
+.ura-modal-input__input.phone
+  width: 150px
+  margin-left: 128px

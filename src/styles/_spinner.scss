@@ -1,0 +1,65 @@
+.ura-spinner-container.ura-inline {
+  padding: 0;
+
+  .ura-spinner {
+    height: 17px;
+  }
+}
+
+.ura-spinner-container {
+  padding: 20px 0;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.ura-spinner {
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.ura-spinner > div {
+  background-color: rgba(225, 225, 225, 0.9);
+  height: 100%;
+  width: 3px;
+  margin: 0 3px 0 0;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.ura-spinner .ura-rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.ura-spinner .ura-rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.ura-spinner .ura-rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.ura-spinner .ura-rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4)}
+  20% { -webkit-transform: scaleY(1.0)}
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}

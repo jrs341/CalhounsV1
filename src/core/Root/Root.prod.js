@@ -9,9 +9,9 @@ import {
 import { Provider } from 'react-redux'
 
 // apollo stuff
-import {
-  ApolloProvider
-} from 'react-apollo'
+// import {
+//   ApolloProvider
+// } from 'react-apollo'
 
 class RootProd extends Component {
   static propTypes = {

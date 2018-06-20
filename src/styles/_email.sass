@@ -1,0 +1,904 @@
+.nowrap
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  flex-grow: 1
+  align-self: stretch
+  align-items: center
+
+.Viewer
+  height: 900px
+  overflow: auto
+.fa
+  color: #CECEBD !important
+  cursor: pointer
+
+  &:hover
+    color: #9c9c8f !important
+    cursor: pointer
+
+.fa-white
+  color: $white !important
+  margin-right: 5px
+  &:hover
+    color: $white !important
+
+.blue.email__padding
+  cursor: pointer
+  padding: 0 0 0 10px
+
+.header__padding
+  margin: 20px 0
+
+.inbox
+  padding-bottom: 0 !important
+
+.App
+  text-align: center
+
+.email_viewer_card
+  padding: 15px
+
+select.email__field
+  margin: 5px 0
+
+.buttonset-right
+  display: flex
+  flex-wrap: nowrap
+
+.buttonset-right button
+  margin-left: 8px
+
+.buttonset-left
+  display: flex
+  flex-wrap: nowrap
+
+.buttonset-left button
+  margin-right: 8px
+
+.email
+    display: flex
+    flex-grow: row
+    flex-grow: 1
+    &__cardEmail
+        width: 100%
+
+    &__cardView
+        border-radius: 5px
+        box-sizing: border-box
+        font-size: 14px
+        font-weight: 100
+        line-height: 24px
+        width: 100%
+
+    &__row
+      display: flex
+      flex-direction: row
+      flex-grow: 1
+      height: 100%
+
+    &__viewer_card
+      padding: 15px 15px 0
+
+    &__subject
+         font-weight: 700
+
+    &__left_header
+      margin: 0
+      font-weight: 300
+      font-size: 16px
+      margin-bottom: 5px
+
+    &__alignRight
+         right: 5px
+
+    &__textarea
+        border: none
+
+    &__button__primary
+        background-color: $blue
+        border-radius: 3px
+        color: white
+        min-width: 115px
+        padding: 10px 20px
+        margin-right: 0px
+        text-align: center
+        font-weight: 400
+        font-size: 16px
+        cursor: pointer
+
+        &:hover
+          background-color: #0079ef
+
+    &__address
+        background-color: $white
+        border-radius: 3px
+        display: inline-flex
+        flex: 1
+        margin: 4px
+        padding: 2px 5px
+        .fa
+          display: flex
+          align-items: center
+          margin-right: 3px
+
+    &__hover
+        font-weight: 700
+        color: black
+
+    &__button__transparent
+        color: $blue
+        padding: 10px
+        text-align: center
+        font-weight: bold
+
+    &__button__list
+        color: #177ee2
+        margin-right: 8px
+        width: inherit
+        cursor: pointer
+
+    &__button__width
+        width: 100px
+        float: right
+
+    &__content_center
+       width: 700px
+       margin-left: auto
+       margin-right: auto
+
+    &__main_column_center
+        border-width: 1px
+        min-height: 900px
+        padding: 0px
+        border-bottom: 1px solid #E2E2D1
+        border-top: 1px solid #E2E2D1
+
+    &__ul-card
+        background-color: white
+        border: none
+        color: #666
+        font-size: 14px
+        font-weight: 100
+        line-height: 24px
+        padding: 14px 8px
+    &__ul-card h4
+      margin: 5px 10px 5px
+      font-size: 20px
+    &__card
+        border-radius: 5px
+        box-sizing: border-box
+        font-size: 14px
+        font-weight: 100
+        line-height: 24px
+        width: 100%
+
+    &__card_white
+        background-color: #fff
+        border: 1px solid #f6f6f1
+        border-radius: 5px
+        font-size: 14px
+        font-weight: 100
+        line-height: 24px
+        width: inherit
+        padding: 10px
+        margin: auto
+
+        td
+          padding: 4px
+
+    &__field
+        background-color: $lightbeige
+        border: 1px solid #f6f6f1
+        border-radius: 2px
+        font-size: 14px
+        font-weight: 100
+        line-height: 24px
+        height: 35px
+        min-width: 60px
+        width: inherit
+
+    &__plusField
+        background-color: $lightbeige
+        border: 1px solid #f6f6f1
+        border-radius: 2px
+        font-size: 14px
+        font-weight: 100
+        line-height: 24px
+        min-height: 35px
+
+        input
+          background-color: transparent !important
+          width: 317px
+
+        option
+          padding: 20px
+
+    &__main_column
+        min-height: 900px
+        border: 1px solid #E2E2D1
+
+    &__margin_rt
+        margin-right: 5px
+
+    &__margin_lf
+        margin-left: 5px
+
+    &__margin_btm
+       line-height: 50px
+
+    &__filter_gray
+      color: $blue
+      cursor: pointer
+
+      &:hover
+        color: $bluehover
+
+
+
+    &__column ul
+        font-size: 14px
+        vertical-align: middle
+        border: 1px solid #fbfbfb
+        list-style: none
+        padding: 0px
+
+    &__column_with_padding
+        padding: 11px
+        height: 500px
+        border: 1px solid #e2e2d1
+
+    &__column_no_padding
+        height: 500px
+        border: 1px solid #e2e2d1
+
+    &__column_fav
+        height: 500px
+
+    &__padding
+        padding: 20px
+
+        div
+          padding: 2px 0
+
+    &__infopane
+        padding: 15px
+        line-height: 24px
+        -webkit-box-shadow: 0 4px 8px #F2E8E0
+        -moz-box-shadow: 0 4px 8px #F2E8E0
+        box-shadow: 0 4px 8px #F2E8E0
+        border-bottom: 1px solid #E2E2D1
+        font-family: 'IBM Plex Sans', sans-serif !important
+        font-size: 14px !important
+
+        .text__label
+          color: #9B9B9B
+
+    &__readpane
+        padding: 20px
+        height: 630px
+        overflow: auto
+        max-width: 655px
+
+    &__padding_lf_sm
+        padding-left: 10px
+        cursor: pointer
+
+    &__padding_rt_sm
+        padding-right: 10px
+
+    &__padding_lf_lg
+        padding-left: 40px
+
+    &__border_top_buttom
+        border-bottom: 1px solid #E2E2D1
+        border-top: 1px solid #E2E2D1
+        padding: 0px
+
+    &__highlight
+        background-color: $white
+
+    &__highlight-red
+        background-color: red
+
+    &__highlight-red
+        background-color: red
+
+
+    &__span
+       padding-left: 10px
+       padding-bottom: 15px
+
+    &__link
+       color: #5f90e0
+
+    &__borders
+        border: 1px solid #faf9f7
+
+    &__bullets_non
+        list-style: none
+
+    &__gary_text
+        color: #7e7e7e
+
+.color
+
+    &__blue
+        color: $blue !important
+        cursor: pointer
+
+    &__red
+        color: $red !important
+        cursor: pointer
+        &:hover
+          color: $redhover !important
+          cursor: pointer
+
+    &__green
+        color: $green !important
+        cursor: pointer
+        &:hover
+          color: $greenhover !important
+          cursor: pointer
+
+    &__orange
+        color: $orange
+        cursor: pointer
+
+    &__grey
+      color: $grey
+
+.field
+     &__max_width
+        width: 500px
+
+     &__hide
+        visibility: hidden
+
+.file
+    &__thumb
+        height: 75px
+        border: 1px solid #000
+        margin: 10px 5px 0 0
+
+
+.message
+    &__card
+        border-top: 1px solid #f6f6f1
+        border-bottom: 1px solid #f6f6f1
+        padding: 15px 20px
+        box-sizing: border-box
+        font-size: 14px
+        font-weight: 100
+        line-height: 24px
+        width: inherit
+        word-wrap: break-word
+
+        &:nth-child(even)
+          background-color: rgba(246,246,241,0.4)
+
+        &__composer
+          padding: 0
+
+    &__card_gray
+        background-color: #faf9f7
+        border: 1px solid #f6f6f1
+        border-radius: 5px
+        padding: 20px
+        font-size: 14px
+        font-weight: 100
+        line-height: 24px
+        width: inherit
+        word-wrap: break-word
+        max-height: 800px
+        overflow-y: auto
+        max-width: 800px
+
+.subject_text
+  color: #9B9B9B
+
+.blue
+   color: $blue
+
+   &:hover
+     color: $bluehover
+
+.card-no-bullet
+   list-style: none
+   padding: 20px
+   width: 100%
+
+.smallfont
+  font-size: 10%
+
+
+.App-logo
+  animation: App-logo-spin infinite 20s linear
+  height: 80px
+
+
+.App-header
+  background-color: #222
+  height: 150px
+  padding: 20px
+  color: white
+
+
+.App-intro
+  font-size: large
+
+
+.backgroundColorMsgHeader
+  background-color: #273746
+  color: #fff
+  text-align: center
+
+
+.blueText
+  color: $blue
+
+
+.blueBox
+  background-color: #0080ff
+  border-radius: 5%
+  padding-left: 30px
+
+
+
+
+.blackborder
+  border: 1px solid #F5F5F5
+  padding: 5px
+
+
+.bordertopbuttom
+  border-top: 1px solid #F5F5F5
+  padding: 30px
+
+
+.borderRight
+  border-right: 1px solid #F5F5F5
+  padding: 30px
+
+
+.borderRightButtom
+  border-right: 1px solid black
+  border-top: 1px solid black
+  padding: 30px
+
+
+
+.bordertopbuttomNoPadding
+  border-top: 1px solid #F5F5F5
+    padding: 5px
+
+
+
+.a
+  border: 1px solid black
+  padding: 5px
+
+
+.borderradius
+  border-radius: 25px
+
+
+.buttonWidth
+  width: 200px
+
+
+.city
+    float: left
+    margin: 5px
+    padding: 15px
+    max-width: 300px
+    height: 300px
+    border: 1px solid black
+
+
+.containerdiv
+   min-height: 900px
+   width: 100%
+   text-align: left
+
+
+
+.containerScrolldiv
+   min-height: 900px
+   width: 100%
+   text-align: left
+   overflow-y: scroll
+
+
+.colorglossy
+    background-color: rgba(246, 245, 241, 0.7)
+    -webkit-box-shadow: 0 4px 8px #F2E8E0
+    -moz-box-shadow: 0 4px 8px #F2E8E0
+    box-shadow: 0 4px 8px #F2E8E0
+    border-bottom: solid 1px #BFB69A
+    border-top: solid 1px #BFB69A
+
+
+.countdiv
+     background-color: #696969
+     width: 50px
+     color: #fff
+     text-align: center
+     padding-left: 2px
+      padding-right: 2px
+     border-radius: 25px
+
+
+.droptarget
+  float: left
+  width: 200px
+  height: 45px
+  margin: 55px
+  margin-top: 155px
+  padding: 10px
+  border: 1px solid #aaaaaa
+
+
+.smContainerdiv
+  min-height: 900px
+  width: 50%
+  text-align: left
+
+
+.graybg
+  background-color: #fafaf7
+
+.greenbg
+  background-color: $green
+
+.redbg
+  background-color: $red
+
+.graybtn
+  background-color: #cecebd
+  color: $white
+  padding: 5px
+  border-radius: 5px
+
+.graykborder
+  border: 1px solid #fafaf7
+  padding: 5px
+
+
+.graybgmemucircle
+  background-color: #DCDCDC
+   border-radius: 25px
+   padding: 5px
+
+
+.graybgmemu
+  background-color: #808080
+  color: #fff
+
+
+.inboxcomposer
+  width: 100%
+  height: 400px
+  padding: 0
+  overflow-y: auto
+
+
+.inputcomposer
+  width: 100%
+  height: inherit
+
+
+.inheritWidth
+  width: inherit
+
+
+.inboxdiv
+   height: 600px
+
+.maxwidth
+ width: 100%
+ margin-bottom: 10px
+
+.menutable tr td
+  border: 1px solid $trueblack
+  padding: 5px
+
+.menuColm
+ width: 300px
+
+.Messages
+  min-height: 900px
+  .text__label
+    font-weight: 400 !important
+    font-family: 'IBM Plex Sans', sans-serif !important
+    font-size: 14px !important
+
+.Favorites
+  font-family: 'IBM Plex Sans', sans-serif !important
+
+.messages-list
+    height: 735px
+    overflow-y: scroll
+
+.messages-header
+  padding: 20px
+  -webkit-box-shadow: 0 4px 8px #F2E8E0
+  -moz-box-shadow: 0 4px 8px #F2E8E0
+  box-shadow: 0 4px 8px #F2E8E0
+  border-bottom: 1px solid #E2E2D1
+
+.messages-header label
+  padding-left: 10px
+  padding-right: 5px
+  display: flex
+  align-items: center
+  white-space: nowrap
+  margin-top: 3px
+
+.messages-header .ura-column h3
+  font-size: 20px
+  margin: 0 0 10px
+
+.messages-header .zerofifty
+    margin: 0 5px
+    white-space: nowrap
+
+.messages-header .selector
+  display: flex
+  align-items: center
+  padding-top: 5px
+
+.opacityMsg
+  opacity: 0.5
+
+
+.popupDiv
+  border-bottom: none
+
+
+.redText
+  color: $red
+
+
+.subjectMsg
+  font-size: 14px
+
+
+.titleMsg
+  font-weight: bold !important
+  display: flex
+  flex: 1
+  font-family: 'IBM Plex Sans', sans-serif !important
+  font-size: 14px !important
+
+.titleMsg .rightAdjust
+  font-weight: 400 !important
+  font-family: 'IBM Plex Sans', sans-serif !important
+  font-size: 14px !important
+
+.tablewidth
+  width: 60%
+
+
+.tablelist tr td
+  padding: 5px
+
+
+.top
+  top: 60px
+  width: 80%
+  left: 5%
+
+
+
+.topImge
+  width: 100%
+
+
+.topPadding
+  padding-top: 20px
+
+
+.topPadding50
+  padding-top: 50px
+
+
+.leftpadding
+  padding-left: 100px
+
+
+.leftpaddingSm
+  padding-left: 40px
+
+
+.leftpaddingSmm
+  padding-left: 10px
+
+.leftpaddingfive
+  padding-left: 5px
+
+
+.rightAdjust
+  display: flex
+  flex: 1
+  align-items: flex-end
+  flex-direction: column
+  justify-content: center
+
+
+.tablewidth30
+  width: 20%
+
+.padding-all
+  padding: 10px
+
+
+.nopadding
+  padding: 0px
+
+
+.fordiv
+  width: 100%
+  border-radius: 25px
+
+.allborder
+  border: 1px solid $trueblack
+
+.paddingleft
+  padding-left: 20px
+
+.paddingbottom
+  padding-bottom: 20px
+
+.paddingbottom-ten
+  padding-bottom: 10px
+
+.paddingtop
+  padding-top: 20px
+
+.paddingtop-ten
+  padding-top: 10px
+
+.withborder
+  border-style: solid
+  border-color: #ccc
+  border-width: 1px
+  padding: 10px
+
+
+.withborderNoPadding
+  border-style: solid
+  border-color: #ccc
+  border-width: 1px
+  padding: 0px
+  height: 500px
+
+
+.noborderlft
+  border-left: none
+
+
+.nobborderbtm
+  border-bottom: none
+
+
+.nobborder
+  border: none
+
+
+.nobborderPadding
+  border: none
+  padding: 5px
+
+.popup
+   position: absolute
+   z-index: 9999999
+   background-color: $white
+   width: 90%
+   left: 5%
+   top: 10%
+   border: 1px solid $trueblack
+
+
+.popupBg
+     position: absolute
+     z-index: 9999
+     background-color: $trueblack
+     opacity: 0.5
+     width: 100%
+     height: 1900px
+
+.tag
+  height: 400px
+
+
+.whiteText
+  color: $white
+
+.flex-end
+  justify-content: flex-end
+  display: flex
+
+.public-DraftStyleDefault-ltr
+  font-size: 14px
+  font-family: 'IBM Plex Sans', sans-serif
+
+.email__field .ura-input
+  background-color: transparent
+  width: 100%
+
+.contextMenu
+    position: absolute
+    background: $white
+    box-shadow: 0px 2px 10px #999999
+
+    &--option
+        padding: 6px 50px 5px 10px
+        min-width: 160px
+        cursor: default
+        font-size: 12px
+        &:hover
+            background: linear-gradient(to top, #555, #333)
+            color: $white
+
+
+        &:active
+            color: #e9e9e9
+            background: linear-gradient(to top, #555, #444)
+
+
+        &__disabled
+            color: #999999
+            pointer-events: none
+
+    &--separator
+        width: 100%
+        height: 1px
+        background: #CCCCCC
+        margin: 0 0 0 0
+
+.public-DraftStyleDefault-ltr
+  width: 560px
+
+.RichTextEditor__editor___1QqIU
+  height: 325px
+
+.email__padding_lf_sm
+  .ura-input
+    padding: 0
+    min-height: 0
+    border: solid 2px skyblue
+    background-color: white
+    height: 20px
+    padding: 2px 6px
+    &::placeholder
+      background-color: lightcyan
+    &:read-only
+      background-color: white
+      border: 0px
+      padding: 0
+      min-height: 0
+      &::placeholder
+        background-color: white
+
+  .email__field
+    min-width: 0
+    min-height: 0
+    height: 20px
+    padding: 2px 6px
+    margin-left: 22px
+    border: solid 2px skyblue
+    background-color: white
+    border-radius: 3px
+    font-family: 'IBM Plex Sans', sans-serif
+  .email__field::placeholder
+    background-color: lightcyan
+
+.email__padding_lf_sm
+  &.email__hover
+    div
+      div
+        &.email__padding_lf_sm
+          display: inline-flex
+          padding-left: 10px
+          align-items: center

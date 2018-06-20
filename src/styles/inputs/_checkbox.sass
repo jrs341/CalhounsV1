@@ -1,0 +1,24 @@
+.ura-checkbox
+  display: block
+  height: 24px
+  width: 24px
+  border: 2px solid $olive
+  border-radius: 20px
+  background-color: none
+  cursor: pointer
+
+.ura-checkbox__input
+  display: none
+
+.ura-checkbox__input:checked + .ura-checkbox
+  height: 22px
+  width: 22px
+  border-width: 3px
+
+  &::before
+    position: absolute
+    margin-left: 1px
+    padding-top: 2px
+    color: $blue
+    content: "\f00c"
+    font: normal normal normal 19px/1 FontAwesome

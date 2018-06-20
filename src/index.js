@@ -2,9 +2,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-// import { Root } from 'core'
-// import routes from 'router'
-// const ENV = process.env
+import { Root } from 'core'
+import routes from 'router'
+const ENV = process.env
 
 /** Redux Integration */
 // import configureStore from 'redux/store/configureStore'
@@ -55,7 +55,11 @@ import ReactDOM from 'react-dom'
 
 ReactDOM.render(
   <Root
+  	env={ENV.NODE_ENV}
+    routes={routes}
+    
   />,
   document.getElementById('root')
 )
-
+// client={client}
+// store={store}

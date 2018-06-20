@@ -9,9 +9,9 @@ import {
 import { Provider } from 'react-redux'
 
 // apollo stuff
-import {
-  ApolloProvider
-} from 'react-apollo'
+// import {
+//   ApolloProvider
+// } from 'react-apollo'
 
 class RootDev extends Component {
   static propTypes = {
@@ -21,12 +21,13 @@ class RootDev extends Component {
   }
   render () {
     const {store, client, routes} = this.props
+    console.log(this.props)
     return (
-      <ApolloProvider client={client}>
-        <Provider store={store}>
+      // {/*<ApolloProvider client={client}>*/}
+        // {/*<Provider store={store}>*/}
           <BrowserRouter children={ routes }/>
-        </Provider>
-      </ApolloProvider>
+        // </Provider>
+      // </ApolloProvider>
     )
   }
 }

@@ -1,0 +1,44 @@
+$total-columns: 16
+$col-widths: ()
+
+.ura-column
+  display: flex
+  flex: 1
+  flex-direction: column
+
+  &--right
+    align-items: flex-end
+    flex-direction: column
+    justify-content: flex-start
+
+.ura-padding-wrapper
+  padding: 30px 34px
+
+.ura-row
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  flex-grow: 1
+
+@for $i from 1 through $total-columns
+  @for $j from 1 through $i
+    $w: ((100% / 16) * $i)
+
+    @if not index($col-widths, $w)
+      .ura-column__#{$i}
+        flex: 0 0 $w
+
+      $col-widths: append($col-widths, $w, comma)
+
+.align
+  &__bottom
+    display: flex
+    align-items: flex-end
+    flex: 1
+    margin-top: 15px
+  &__maxnote
+    max-height: 115px
+    overflow-x: auto
+  &__fullheight
+    display: flex
+    flex: 1

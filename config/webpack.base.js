@@ -36,7 +36,7 @@ const webpackConfig = {
     //xlsx react module?
     noParse: [/xlsx.core.min.js/, /xlsx.full.min.js/, /jszip.js/]
   },
-  plugins: []
+  plugins: ["transform-object-rest-spread"]
 }
 
 // ------------------------------------

@@ -1,0 +1,72 @@
+.ura-sub-navigation
+  display: none
+  flex-grow: 1
+  margin-left: 10px
+
+  &__item
+    background-color: $subnav-item-bg
+    border: 2px solid transparent
+    border-radius: 2px 2px 0 0
+    color: $subnav-item-text
+    cursor: pointer
+    font-size: 13.5px
+    font-weight: 100
+    letter-spacing: .01em
+    margin: 0 5px
+    max-height: 16px
+    overflow: hidden
+    padding: 7px 15px
+    position: relative
+    text-overflow: ellipsis
+    top: 3px
+    white-space: nowrap
+
+    &:hover
+      background-color: $subnav-item-hover-bg
+      color: $subnav-item-hover-text
+
+    &:first-child
+      margin-left: 10px
+
+    &--active
+      background-color: $white
+      color: $black
+      font-weight: 400
+      margin-bottom: 0
+      max-height: 35px
+      padding: 8px 16px
+      top: 2px
+
+      &:hover
+        background-color: $white
+        color: $black
+
+  &__button
+    background-color: $blue
+    border-radius: 2px 2px 0 0
+    color: $white
+    font-size: 16px
+    font-weight: 500
+    max-height: 35px
+
+  &__input,
+  &__select
+    background-color: $input-bg
+    border-radius: 2px 2px 0 0
+    min-height: 35px
+    min-width: 260px
+
+  &__fourthtier
+    padding: 0
+    margin-top: 10px !important
+    margin-bottom: 10px !important
+    button
+      font-size: 14px
+
+  &__fourthtier li
+    display: inline
+    background-color: $lightbeige
+    margin-right: 5px
+    padding: 10px 15px
+    border-radius: 3px 3px 0 0
+    cursor: pointer
