@@ -1,3 +1,7 @@
 export * from './ErrorBoundary'
+export * from './Main'
+export * from './MainTemplate'
 export * from './Module'
 export * from './Placeholder'
+export * from './Section'
+export * from './Static'
