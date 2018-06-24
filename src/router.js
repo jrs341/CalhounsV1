@@ -6,7 +6,7 @@ import {
   Switch,
 } from 'react-router-dom'
 
-import {Home, PageNotFound} from 'pages'
+import {Contact, Home, PageNotFound} from 'pages'
 
 //import { Client } from 'library'
 
@@ -21,6 +21,8 @@ export default (
       <Route path={'/home'}
         component={Home}/>
         {/* INFO */}
+       <Route path={'/contact'}
+        component={Contact}/>
        {/*404 NOT FOUND */}
       <Route component={PageNotFound}/>
     </Switch>
