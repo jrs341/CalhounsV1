@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import { withRouter } from 'react-router-dom'
-import { connect } from 'react-redux'
+import {withRouter} from 'react-router-dom'
+import {connect} from 'react-redux'
 
-import {ErrorBoundary} from 'library'
+import {ErrorBoundary} from '../ErrorBoundary'
 
-class Container extends Component {
+export default class Container extends Component {
   static propTypes = {
     // apollo setup without wrapping a component in that file
     // just returns the main function
@@ -58,6 +58,3 @@ class Container extends Component {
     )(Component)
   }
 }
-
-export { Container }
-export default Container

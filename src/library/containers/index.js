@@ -1,1 +1,6 @@
-export { default as Container } from './Container'
+export * from './Container'
+export * from './ErrorBoundary'
+export * from './Main'
+export * from './MainTemplate'
+export * from './Section'
+export * from './Static'
