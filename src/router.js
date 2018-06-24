@@ -8,9 +8,11 @@ import {
 
 import {Home, PageNotFound} from 'pages'
 
-// import { Client } from 'core'
+//import { Client } from 'library'
+
+//console.log('router client', Client)
 export default (
-  // {/*<Client>*/}
+	//<Client>
     // {/*<Modal />*/}
     <Switch>
       {/* HOME */}
@@ -22,5 +24,5 @@ export default (
        {/*404 NOT FOUND */}
       <Route component={PageNotFound}/>
     </Switch>
-  // </Client>
+ 	//</Client>
 )

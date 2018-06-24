@@ -2,7 +2,11 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 
 import {
-  Container, Static, Section, Main
+  Container,
+  Header,
+  Static,
+  Section,
+  Main
 } from 'library'
 
 
@@ -16,10 +20,10 @@ export default class MainTemplate extends Component {
     return (
       <Static>
         <Section flow='row' flex={1}>
-          {/*<Container
-            componentToWrap={Sidebar}
+          <Container
+            componentToWrap={Header}
             router
-          />*/}
+          />
           <Main className='ura-content'>
             {children}
           </Main>

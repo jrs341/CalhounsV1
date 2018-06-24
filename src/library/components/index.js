@@ -1,4 +1,5 @@
 export * from './ErrorBoundary'
+export * from './Header'
 export * from './Main'
 export * from './MainTemplate'
 export * from './Module'

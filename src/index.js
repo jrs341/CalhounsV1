@@ -2,7 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { Root } from 'core'
+import { Root } from 'library'
 import routes from 'router'
 const ENV = process.env
 
@@ -45,11 +45,11 @@ const ENV = process.env
 
 // const cache = new InMemoryCache()
 
-// const client = new ApolloClient({
-//   link: authLink.concat(httpLink),
-//   cache: cache,
-//   connectToDevTools: true,
-// })
+ //const client = new ApolloClient({
+   //link: authLink.concat(httpLink),
+   //cache: cache,
+   //connectToDevTools: true,
+ //})
 
 // Todo: Make uri and port dynamic with env vars to support stages
 
