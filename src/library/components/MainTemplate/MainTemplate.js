@@ -19,7 +19,7 @@ export default class MainTemplate extends Component {
     const {children} = this.props
     return (
       <Static>
-        <Section flow='row' flex={1}>
+        <Section flow='column' flex={1}>
           <Container
             componentToWrap={Header}
             router
